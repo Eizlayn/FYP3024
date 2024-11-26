@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_image">
+
+    <!-- Top space to push content down -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- App Title at the top center -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Islamic Basics"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center" />
+
+    <!-- Middle space to push buttons down -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Buttons centered in the middle of the screen -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Start Quiz Button -->
+        <Button
+            android:id="@+id/startQuizButton"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="Start Quiz"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6200EE"
+            android:layout_marginBottom="16dp" />
+
+        <!-- View Lessons Button -->
+        <Button
+            android:id="@+id/viewLessonsButton"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="View Lessons"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6200EE"
+            android:layout_marginBottom="16dp" />
+
+        <!-- User Manual Button -->
+        <Button
+            android:id="@+id/userManualButton"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="User Manual"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6200EE"
+            android:layout_marginBottom="16dp" />
+
+
+
+    </LinearLayout>
+
+    <!-- Space to push the "About" section to the bottom -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- About Section at the bottom -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/appDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Islamic Basics"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/appDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Islamic Basics is a learning app to deepen understanding of Tauhid, Feqah, and Akhlak."
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/appVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/developerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed by Eizlan Hakim"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>

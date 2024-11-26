@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:padding="16dp">
+
+    <!-- Title "Lessons" -->
+    <TextView
+        android:id="@+id/lessonsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lessons"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:padding="12dp" />
+
+    <!-- Buttons and Notes Section -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lessonsTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Feqah Button -->
+            <Button
+                android:id="@+id/buttonFeqah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#6200EE"
+                android:drawablePadding="8dp"
+                android:elevation="4dp"
+                android:text="Feqah"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- Feqah Notes Section -->
+            <TextView
+                android:id="@+id/feqahNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_background"
+                android:lineSpacingExtra="6dp"
+                android:padding="12dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <!-- Tauhid Button -->
+            <Button
+                android:id="@+id/buttonTauhid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#6200EE"
+                android:drawablePadding="8dp"
+                android:elevation="4dp"
+                android:text="Tauhid"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- Tauhid Notes Section -->
+            <TextView
+                android:id="@+id/tauhidNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_background"
+                android:lineSpacingExtra="6dp"
+                android:padding="12dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <!-- Akhlak Button -->
+            <Button
+                android:id="@+id/buttonAkhlak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#6200EE"
+                android:drawablePadding="8dp"
+                android:elevation="4dp"
+                android:text="Akhlak"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- Akhlak Notes Section -->
+            <TextView
+                android:id="@+id/akhlakNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_background"
+                android:lineSpacingExtra="6dp"
+                android:padding="12dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
